@@ -1,12 +1,77 @@
-# React + Vite
+# 🧠 AI Safety Incident Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Safety Incident Dashboard is a sleek and responsive web app designed to track and manage AI-related incidents with ease. Built using **ReactJS**, it allows users to filter, sort, and view detailed incident reports—or even file new ones on the fly! ⚠️📊
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **View incidents** with title, severity, and date
+- **Filter** incidents by severity (All, Low, Medium, High)
+- **Sort** by date: Newest First or Oldest First
+- **Toggle** full incident descriptions on click
+- **Submit** new incidents with a form and validation
+- **Responsive layout** using Flexbox and Grid
+- **Clean UI** with subtle hover effects ✨
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/rjsnhk/Ai-Safety-Incident-Dashboard.git
+   ```
+
+2. **Navigate to the project folder**:
+   ```bash
+   cd Ai-Safety-Incident-Dashboard
+   ```
+
+3. **Install the dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Run the project locally**:
+   ```bash
+   npm run dev
+   ```
+
+Now open your browser and go to `http://localhost:5173` to explore the dashboard! 🧭
+
+---
+
+## 🌍 Live Demo
+
+Check out the live version here: [AI Safety Incident Dashboard Live](https://aparichit-jade.vercel.app) 🌐
+
+---
+
+## 🛠️ Tech Stack
+
+- **ReactJS** for component-based UI
+- **JavaScript (ES6+)** for interactivity
+- **HTML5 + CSS3** for structure and styling
+- **React Hooks** for state and side-effect management
+- **Flexbox / Grid** for responsive layout
+
+---
+
+## 🤝 Contributions
+
+Want to make this dashboard even better?  
+Fork the repo, create a branch, and send a pull request—contributions are always welcome! 🛠️💡
+
+---
+
+## 📋 Description
+
+This project implements a full-featured, interactive dashboard using modern frontend concepts. It highlights real-world use of React hooks, form handling, conditional rendering, and dynamic state management in a responsive UI.
+
+#ReactJS #Dashboard #WebDevelopment #AI #FrontendDev #IncidentReporting
+```
+
+Let me know if you want a badge section (like `Built with ❤️ using React`) or preview image/screenshot!
