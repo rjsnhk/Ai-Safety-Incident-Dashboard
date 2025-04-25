@@ -1,0 +1,139 @@
+/* Global Styles */
+:root {
+  /* Light theme variables */
+  --bg-primary-light: #f8f9fa;
+  --bg-secondary-light: #ffffff;
+  --text-primary-light: #212529;
+  --text-secondary-light: #495057;
+  --accent-color-light: #006400;
+  --border-color-light: #dee2e6;
+  --card-bg-light: #ffffff;
+  --card-border-light: #e9ecef;
+  --button-bg-light: #e9ecef;
+  --button-hover-light: #ced4da;
+  --low-color-light: #198754;
+  --medium-color-light: #ffc107;
+  --high-color-light: #dc3545;
+  --overlay-light: rgba(255, 255, 255, 0.85);
+
+  /* Dark theme variables */
+  --bg-primary-dark: #121212;
+  --bg-secondary-dark: #1e1e1e;
+  --text-primary-dark: #ffffff;
+  --text-secondary-dark: #adb5bd;
+  --accent-color-dark: #00ff00;
+  --border-color-dark: #333333;
+  --card-bg-dark: rgba(0, 0, 0, 0.5);
+  --card-border-dark: rgba(0, 255, 0, 0.2);
+  --button-bg-dark: rgba(0, 0, 0, 0.3);
+  --button-hover-dark: rgba(0, 0, 0, 0.5);
+  --low-color-dark: #00ff00;
+  --medium-color-dark: #ffff00;
+  --high-color-dark: #ff5555;
+  --overlay-dark: rgba(0, 0, 0, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  outline: none;  /* Removes the green outline when clicked */
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+  border: none;
+}
+
+.theme-toggle:focus {
+  outline: none;  /* Ensures the green outline is removed on focus as well */
+}
+
+
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 0, 0.3);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.light ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: rgba(0, 100, 0, 0.2);
+  border-radius: 4px;
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 100, 0, 0.3);
+}
+
+/* Focus Styles */
+:focus {
+  outline: 2px solid var(--accent-color-dark);
+  outline-offset: 2px;
+}
+
+/* Selection Styles */
+.dark ::selection {
+  background-color: rgba(0, 255, 0, 0.3);
+  color: #fff;
+}
+
+.light ::selection {
+  background-color: rgba(0, 100, 0, 0.2255, 0, 0.3);
+  color: #fff;
+}
+
+.light ::selection {
+  background-color: rgba(0, 100, 0, 0.2);
+  color: #000;
+}
+
+
+

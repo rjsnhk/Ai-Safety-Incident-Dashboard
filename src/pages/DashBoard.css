@@ -1,0 +1,331 @@
+/* Dashboard Styles */
+.dashboard {
+  position: relative;
+  min-height: 100vh;
+}
+
+.circuit-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.dark .dashboard-overlay {
+  background-color: var(--overlay-dark);
+  color: var(--text-primary-dark);
+}
+
+.light .dashboard-overlay {
+  background-color: var(--overlay-light);
+  color: var(--text-primary-light);
+}
+
+/* Header */
+.dashboard-header {
+  border-bottom: 1px solid var(--border-color-dark);
+}
+
+.dark .dashboard-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 10px rgba(0, 255, 0, 0.1);
+}
+
+.light .dashboard-header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.dashboard-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.dark .dashboard-title {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.light .dashboard-title {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.dark .home-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark .home-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.light .home-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.light .home-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+.home-icon {
+  font-size: 1.25rem;
+}
+
+.report-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark .report-button {
+  background-color: rgba(0, 255, 0, 0.2);
+  color: #00ff00;
+  border: 1px solid rgba(0, 255, 0, 0.4);
+}
+
+.dark .report-button:hover {
+  background-color: rgba(0, 255, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.light .report-button {
+  background-color: rgba(0, 100, 0, 0.1);
+  color: #006400;
+  border: 1px solid rgba(0, 100, 0, 0.2);
+}
+
+.light .report-button:hover {
+  background-color: rgba(0, 100, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 100, 0, 0.1);
+}
+
+.dark .report-button.active {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #ff5555;
+  border-color: rgba(255, 0, 0, 0.4);
+}
+
+.dark .report-button.active:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.light .report-button.active {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+  border-color: rgba(220, 53, 69, 0.2);
+}
+
+.light .report-button.active:hover {
+  background-color: rgba(220, 53, 69, 0.2);
+  box-shadow: 0 0 10px rgba(220, 53, 69, 0.1);
+}
+
+/* Dashboard Main */
+.dashboard-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 5%;
+}
+
+/* Controls Container */
+.controls-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.dark .filter-icon {
+  color: #00ff00;
+}
+
+.light .filter-icon {
+  color: #006400;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark .filter-button {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.dark .filter-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.light .filter-button {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.light .filter-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark .filter-button.active {
+  background-color: rgba(0, 255, 0, 0.2);
+  border-color: rgba(0, 255, 0, 0.4);
+  color: #00ff00;
+}
+
+.light .filter-button.active {
+  background-color: rgba(0, 100, 0, 0.1);
+  border-color: rgba(0, 100, 0, 0.2);
+  color: #006400;
+}
+
+.dark .filter-button.low {
+  border-color: rgba(0, 255, 0, 0.4);
+}
+
+.dark .filter-button.low.active {
+  background-color: rgba(0, 255, 0, 0.2);
+  color: #00ff00;
+}
+
+.light .filter-button.low {
+  border-color: rgba(25, 135, 84, 0.2);
+}
+
+.light .filter-button.low.active {
+  background-color: rgba(25, 135, 84, 0.1);
+  color: #198754;
+}
+
+.dark .filter-button.medium {
+  border-color: rgba(255, 255, 0, 0.4);
+}
+
+.dark .filter-button.medium.active {
+  background-color: rgba(255, 255, 0, 0.2);
+  color: #ffff00;
+}
+
+.light .filter-button.medium {
+  border-color: rgba(255, 193, 7, 0.2);
+}
+
+.light .filter-button.medium.active {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.dark .filter-button.high {
+  border-color: rgba(255, 0, 0, 0.4);
+}
+
+.dark .filter-button.high.active {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #ff5555;
+}
+
+.light .filter-button.high {
+  border-color: rgba(220, 53, 69, 0.2);
+}
+
+.light .filter-button.high.active {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.sort-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dark .sort-button {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.dark .sort-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.light .sort-button {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.light .sort-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,85 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+}
+
+.dark .navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light .navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-circle img {
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.logo span {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.dark .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark .nav-link:hover {
+  color: #fff;
+}
+
+.light .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.light .nav-link:hover {
+  color: #000;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.dark .nav-button {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.dark .nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.light .nav-button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+.light .nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
